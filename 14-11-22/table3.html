@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>email</th>
+                <th>username</th>
+                <th>password</th>
+                
+            </tr>
+        </thead>
+        <tbody></tbody> 
+
+    </table>
+    <script>
+
+    var users=[
+        {
+            "id": 6,
+            "email": "JBoudreaux@sagittis.ly",
+            "username": "BDabbs",
+            "password": "BafGB"
+        },
+        {
+            "id": 7,
+            "email": "SPfeiffer@amet.ly",
+            "username": "BBuckham",
+            "password": "ovF6o"
+        },
+        {
+            "id": 8,
+            "email": "SBruce@sapien.ly",
+            "username": "JTaverna",
+            "password": "fDJpZ"
+        },
+        {
+            "id": 9,
+            "email": "AMortimore@tempor.ly",
+            "username": "DImmormino",
+            "password": "HdO6O"
+        },
+        {
+            "id": 10,
+            "email": "RWeiler@facilisis.gov",
+            "username": "THawkins",
+            "password": "Z1mvv"
+        },
+        {
+            "id": 11,
+            "email": "ERice@amet.org",
+            "username": "DGeouque",
+            "password": "PEcXP"
+        },
+        {
+            "id": 12,
+            "email": "MBlankenship@quis.com",
+            "username": "GAlunde",
+            "password": "Pyer4"
+        },
+        {
+            "id": 13,
+            "email": "JScribner@sapien.io",
+            "username": "APetrie",
+            "password": "ZwgdK"
+        },
+        {
+            "id": 14,
+            "email": "CKeltner@in.com",
+            "username": "APrezzavento",
+            "password": "nETcB"
+        },
+        {
+            "id": 15,
+            "email": "ILenz@orci.net",
+            "username": "GMccollum",
+            "password": "Wk4P7"
+        }
+    ]
+
+        users.forEach((user) => {
+            var mytr = document.createElement("tr")
+
+            var td1 = document.createElement("td");
+            td1.innerHTML = user.id
+            mytr.appendChild(td1)
+
+            var td2 = document.createElement("td");
+            td2.innerHTML = user.email
+            mytr.appendChild(td2)
+
+
+            var td3 = document.createElement("td");
+            td3.innerHTML = user.username
+            mytr.appendChild(td3)
+
+            var td4 = document.createElement("td");
+            td4.innerHTML = user.password
+            mytr.appendChild(td4)
+            
+            document.querySelector("tbody").appendChild(mytr)
+        })
+
+
+    </script>
+    
+</body>
+</html>

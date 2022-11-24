@@ -7,24 +7,34 @@
     <title>objects</title>
 </head>
 <body>
-    <script>
+      <script>
         var person = {
-            myName : "R.Divya",
-            email : "rayadurgamdivya@gamil.com",
-            mobile : 9849871353
+            myName : "Srinivas",
+            email : "sreenukorivi143@gamil.com",
+            mobile : 6305934193
         } ;
         person.language = "telugu";
-        person. BrotherName = " Yashwanth";
-        person.FatherName="Nanda Kumar"
+        person. BrotherName = " saikumar";
+        person.FatherName="Manohar"
 
         person['city'] = "Srikalahasthi " 
         person[ 'pincode '] = 517644
-        person['MotherName'] = "Munilakshmi" ;
+        person['MotherName'] = "Lakshmi" ;
         console .log(person)
 
          for(var a in person){
             document.write(a+" : "+ person[a]+"<br>")
          }
+    </script>
+    <script>
+        document.write(person.myname+"<br>" + person.emai +"<br>"+ person.mobile+"<br>")
+        for( a in person){
+        console.log(a)
+        }
+        for( var a in person){
+            document.write(a +"  :  <br>" )
+            document.write(a + " : " + person[a] + "<br>")
+        }
     </script>
  </body>
 </html>

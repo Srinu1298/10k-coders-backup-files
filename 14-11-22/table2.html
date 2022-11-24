@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>TelephoneNumber</th>
+                <th>Address</th>
+                <th>CityName</th>
+                <th>StateName</th>
+                <th>Zipcode</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        var users = [
+            {
+                "fname": "Asif",
+                "lname": "Worden",
+                "tel": "(657)508-9949",
+                "address": "3264 Placerat Ln",
+                "city": "Snow Hill",
+                "state": "AZ",
+                "zip": 27883
+            },
+            {
+                "fname": "Scort",
+                "lname": "Coleman",
+                "tel": "(443)532-2469",
+                "address": "4767 Odio Rd",
+                "city": "Saugus",
+                "state": "MT",
+                "zip": 40514
+            },
+            {
+                "fname": "Kent",
+                "lname": "Angell",
+                "tel": "(105)265-7685",
+                "address": "1575 Porta Rd",
+                "city": "St. George",
+                "state": "DC",
+                "zip": 55290
+            },
+            {
+                "fname": "Daydria",
+                "lname": "Lamb",
+                "tel": "(487)178-0338",
+                "address": "1171 Donec Dr",
+                "city": "Saugus",
+                "state": "TX",
+                "zip": 66811
+            },
+            {
+                "fname": "Tamika",
+                "lname": "Cates",
+                "tel": "(663)826-7710",
+                "address": "3207 Facilisis Ln",
+                "city": "Pittsburg",
+                "state": "MI",
+                "zip": 10194
+            },
+            {
+                "fname": "Corrine",
+                "lname": "Flamme",
+                "tel": "(746)958-8728",
+                "address": "7259 Nec Ct",
+                "city": "Rexburg",
+                "state": "AZ",
+                "zip": 33201
+            },
+            {
+                "fname": "Debbie",
+                "lname": "Vanburen",
+                "tel": "(577)077-1489",
+                "address": "6501 Sollicitudin Ln",
+                "city": "Malibu",
+                "state": "MS",
+                "zip": 19585
+            },
+            {
+                "fname": "Suanne",
+                "lname": "Balasubramanian",
+                "tel": "(360)193-0088",
+                "address": "7087 Facilisis Rd",
+                "city": "Slidell",
+                "state": "VA",
+                "zip": 48511
+            },
+            {
+                "fname": "Eileen",
+                "lname": "Montemer",
+                "tel": "(428)362-3274",
+                "address": "4379 Sit Ave",
+                "city": "Phoenix",
+                "state": "VA",
+                "zip": 48860
+            },
+            {
+                "fname": "Tae",
+                "lname": "Borrego",
+                "tel": "(539)063-5110",
+                "address": "6532 Magna Ave",
+                "city": "El Dorado Hills",
+                "state": "DE",
+                "zip": 14783
+            }
+        ]
+        
+        users.forEach((user) => {
+            var mytr = document.createElement("tr")
+
+            var td1 = document.createElement("td");
+            td1.innerHTML = user.fname
+            mytr.appendChild(td1)
+
+            var td2 = document.createElement("td");
+            td2.innerHTML = user.lname
+            mytr.appendChild(td2)
+
+            var td3 = document.createElement("td");
+            td3.innerHTML = user.tel
+            mytr.appendChild(td3)
+
+            var td4 = document.createElement("td");
+            td4.innerHTML = user.address
+            mytr.appendChild(td4)
+
+
+            var td5 = document.createElement("td");
+            td5.innerHTML = user.city
+            mytr.appendChild(td5)
+
+
+
+            var td6 = document.createElement("td");
+            td6.innerHTML = user.state
+            mytr.appendChild(td6)
+
+
+            var td7 = document.createElement("td");
+            td7.innerHTML = user.zip
+            mytr.appendChild(td7)
+
+             document.querySelector("tbody").appendChild(mytr)
+        })
+
+    </script>
+
+</body>
+    
+
+</html>
